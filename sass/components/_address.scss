@@ -1,0 +1,23 @@
+.address {
+  font-style: normal;
+}
+
+.address-list__link {
+  line-height: 1.71;
+
+  @include customTransition(color);
+
+  &:hover,
+  &:focus {
+    color: $color-site-accent;
+  }
+
+  &--location {
+    color: $color-text-secondary;
+  }
+
+  &--mail,
+  &--tel {
+    color: $color-text-contacts;
+  }
+}

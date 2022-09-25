@@ -1,0 +1,81 @@
+.section {
+  width: 100vw;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4.2857rem;
+  padding-bottom: 4.2857rem;
+
+  // &-header {
+  //   border-bottom: 1px solid #ececec;
+  //   padding-top: 0;
+  //   padding-bottom: 0;
+  // }
+
+  &-hero {
+    padding-top: 8.4286rem;
+    padding-bottom: 8.4286rem;
+  }
+
+  &-team {
+    background-color: $color-bg-secondary;
+  }
+
+  &-footer {
+    background-color: $color-bg-footer;
+  }
+
+  &__title {
+    margin-bottom: 2.1429rem;
+
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.18;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $color-text-title;
+  }
+
+  // @media screen and (max-width: 480px) {
+  //   width: 480px;
+  // }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  // 769px->
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    // &-header {
+    //   padding-top: 0;
+    //   padding-bottom: 0;
+    // }
+
+    &-hero {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+
+    &-features {
+      padding-bottom: 0;
+    }
+
+    &-footer {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    &__title {
+      margin-bottom: 50px;
+
+      font-size: 28px;
+      line-height: 1.18;
+    }
+  }
+}
